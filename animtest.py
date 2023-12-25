@@ -1,3 +1,4 @@
+import streamlit as st
 from matplotlib import pyplot as plt
 from matplotlib.animation import FuncAnimation
 import numpy as np
@@ -26,4 +27,5 @@ animation = FuncAnimation(figure,
                           func = animation_function,
                           frames = np.arange(0, 10, 0.1),
                           interval = 10)
-plt.show()
+# plt.show()
+st.pyplot(fig)
