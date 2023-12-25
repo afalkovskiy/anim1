@@ -38,4 +38,4 @@ init()
 for i in range(100):
     animation_function(i)
     time.sleep(0.5)
-st.pyplot(plt)
+st.pyplot(fig)
