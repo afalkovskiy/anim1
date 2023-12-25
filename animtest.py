@@ -8,7 +8,7 @@ st.title("anim test")
 x = []
 y = []
 
-figure, ax = plt.subplots()
+fig, ax = plt.subplots()
 
 # Setting limits for x and y axis
 ax.set_xlim(0, 100)
