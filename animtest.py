@@ -34,9 +34,8 @@ def animation_function(i):
 #                           interval = 10)
 # plt.show()
 
-init()
+st.pyplot(fig)
 for i in range(100):
     animation_function(i)
-    st.pyplot(fig)
     time.sleep(0.5)
 
