@@ -2,6 +2,7 @@ import streamlit as st
 from matplotlib import pyplot as plt
 from matplotlib.animation import FuncAnimation
 import numpy as np
+import time
 
 st.title("anim test")
 
