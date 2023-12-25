@@ -30,4 +30,4 @@ animation = FuncAnimation(fig,
                           frames = np.arange(0, 10, 0.1),
                           interval = 10)
 # plt.show()
-st.pyplot(fig)
+st.pyplot(plt)
