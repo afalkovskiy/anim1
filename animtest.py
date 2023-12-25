@@ -24,9 +24,9 @@ def animation_function(i):
     x.append(i * 15)
     y.append(i)
 
-    line.set_xdata(x)
-    line.set_ydata(y)
-    return line,
+    # line.set_xdata(x)
+    # line.set_ydata(y)
+    # return line,
 
 # animation = FuncAnimation(fig,
 #                           func = animation_function,
