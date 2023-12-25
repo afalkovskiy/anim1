@@ -37,5 +37,7 @@ def animation_function(i):
 st.pyplot(fig)
 for i in range(100):
     animation_function(i)
+    st.text(i)
     time.sleep(0.5)
+    
 
