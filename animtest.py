@@ -36,7 +36,7 @@ def animation_function(i):
 
 st.pyplot(fig)
 txt1 = ''
-st.text(txt1)
+st.text(txt1)  
 for i in range(100):
     animation_function(i)
     txt1 = str(i)
