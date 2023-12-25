@@ -17,6 +17,8 @@ ax.set_ylim(0, 12)
 # Since plotting a single graph
 line,  = ax.plot(0, 0)
 
+def init():  # give a clean slate to start
+    line.set_ydata([np.nan] * len(x))
 def animation_function(i):
     x.append(i * 15)
     y.append(i)
@@ -25,9 +27,14 @@ def animation_function(i):
     line.set_ydata(y)
     return line,
 
-animation = FuncAnimation(fig,
-                          func = animation_function,
-                          frames = np.arange(0, 10, 0.1),
-                          interval = 10)
+# animation = FuncAnimation(fig,
+#                           func = animation_function,
+#                           frames = np.arange(0, 10, 0.1),
+#                           interval = 10)
 # plt.show()
+
+init()
+for i in range(100):
+    animation_function(i)
+    time.sleep(0.1)
 st.pyplot(plt)
