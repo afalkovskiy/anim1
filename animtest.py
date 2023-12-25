@@ -25,7 +25,7 @@ def animation_function(i):
     line.set_ydata(y)
     return line,
 
-animation = FuncAnimation(figure,
+animation = FuncAnimation(fig,
                           func = animation_function,
                           frames = np.arange(0, 10, 0.1),
                           interval = 10)
