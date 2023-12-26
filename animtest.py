@@ -35,9 +35,9 @@ def animation_function(i):
 # plt.show()
 txt1 = ''
 for i in range(100):
-    animation_function(i)
+    # animation_function(i)
     txt1 = str(i)
-    time.sleep(10.5)
+    time.sleep(1.5)
 
 st.text(txt1)  
 st.pyplot(fig)
