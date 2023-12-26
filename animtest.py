@@ -40,7 +40,7 @@ t = st.empty()
 for i in range(20):
     # animation_function(i)
     txt1 = str(i)
-    t.header(txt1) 
+    t.write(txt1) 
     time.sleep(1.5)
 st.header(txt1)
 
