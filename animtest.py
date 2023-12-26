@@ -4,7 +4,7 @@ from matplotlib.animation import FuncAnimation
 import numpy as np
 import time
 
-st.title("anim test")
+st.title("anim test 2")
 
 x = []
 y = []
