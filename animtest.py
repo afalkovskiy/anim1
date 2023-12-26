@@ -42,7 +42,7 @@ for i in range(20):
     time.sleep(1.5)
 st.header(txt1)
 
-# st.write(txt1)  
+st.write(txt1)  
 # st.pyplot(fig)
 
     
