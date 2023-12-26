@@ -39,6 +39,7 @@ st.header(txt1)
 for i in range(20):
     # animation_function(i)
     txt1 = str(i)
+    st.write(txt1) 
     time.sleep(1.5)
 st.header(txt1)
 
