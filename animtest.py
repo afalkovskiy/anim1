@@ -4,7 +4,7 @@ from matplotlib.animation import FuncAnimation
 import numpy as np
 import time
 
-st.title("anim test 2")
+st.title("anim test 3")
 
 x = []
 y = []
@@ -34,15 +34,15 @@ def animation_function(i):
 #                           interval = 10)
 # plt.show()
 txt1 = ''
-st.text(txt1) 
+# st.text(txt1) 
 st.header(txt1)
 for i in range(20):
     # animation_function(i)
     txt1 = str(i)
     time.sleep(1.5)
 
-st.text(txt1)  
-st.pyplot(fig)
+# st.text(txt1)  
+# st.pyplot(fig)
 
     
 
