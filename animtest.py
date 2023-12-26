@@ -35,7 +35,7 @@ def animation_function(i):
 # plt.show()
 txt1 = ''
 st.text(txt1) 
-st.header(text1)
+st.header(txt1)
 for i in range(20):
     # animation_function(i)
     txt1 = str(i)
