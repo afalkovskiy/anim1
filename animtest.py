@@ -36,10 +36,11 @@ def animation_function(i):
 txt1 = ''
 st.write(txt1) 
 st.header(txt1)
+t = st.empty()
 for i in range(20):
     # animation_function(i)
     txt1 = str(i)
-    st.write(txt1) 
+    t.header(txt1) 
     time.sleep(1.5)
 st.header(txt1)
 
