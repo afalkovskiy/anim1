@@ -39,7 +39,6 @@ for i in range(100):
     txt1 = str(i)
     time.sleep(0.5)
 
-
 st.text(txt1)  
 st.pyplot(fig)
 
