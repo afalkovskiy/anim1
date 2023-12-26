@@ -34,6 +34,8 @@ def animation_function(i):
 #                           interval = 10)
 # plt.show()
 txt1 = ''
+st.text(txt1) 
+st.header(text1)
 for i in range(20):
     # animation_function(i)
     txt1 = str(i)
