@@ -33,6 +33,11 @@ def animation_function(i):
 #                           frames = np.arange(0, 10, 0.1),
 #                           interval = 10)
 # plt.show()
+for i in range(100):
+    animation_function(i)
+    txt1 = str(i)
+    time.sleep(0.5)
+
 txt1 = '0'
 st.text(txt1)  
 st.pyplot(fig)
