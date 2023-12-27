@@ -33,6 +33,28 @@ def animation_function(i):
 #                           frames = np.arange(0, 10, 0.1),
 #                           interval = 10)
 # plt.show()
+
+fig, ax = plt.subplots()
+
+ax = plt.gca()
+xmin = 0.
+ymin = 0.
+xmax = 100.
+ymax = xmax
+ax.set_xlim([xmin, xmax])
+ax.set_ylim([ymin, ymax])
+
+plt.xlabel("X (m)")
+plt.ylabel("Y (m)")
+plt.grid(True)
+
+x = np.array([5,7,8,7,2,17,2,9,4,11,12,9,6])
+y = np.array([99,86,87,88,111,86,103,87,94,78,77,85,86])
+
+plt.scatter(x, y)
+
+st.pyplot(fig)
+
 txt1 = ''
 st.write(txt1) 
 st.header(txt1)
@@ -46,20 +68,7 @@ st.header(txt1)
 
 st.write(txt1)  
 # st.pyplot(fig)
-fig, ax = plt.subplots()
 
-ax = plt.gca()
-xmin = 0.
-ymin = 0.
-xmax = 10.
-ymax = xmax
-ax.set_xlim([xmin, xmax])
-ax.set_ylim([ymin, ymax])
-
-plt.xlabel("X (m)")
-plt.ylabel("Y (m)")
-plt.grid(True)
-st.pyplot(fig)
 
     
 
