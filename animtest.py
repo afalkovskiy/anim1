@@ -46,6 +46,20 @@ st.header(txt1)
 
 st.write(txt1)  
 # st.pyplot(fig)
+fig, ax = plt.subplots()
+
+ax = plt.gca()
+xmin = 0.
+ymin = 0.
+xmax = 10.
+ymax = xmax
+ax.set_xlim([xmin, xmax])
+ax.set_ylim([ymin, ymax])
+
+plt.xlabel("X (m)")
+plt.ylabel("Y (m)")
+plt.grid(True)
+st.pyplot(fig)
 
     
 
