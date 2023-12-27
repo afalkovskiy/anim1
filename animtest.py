@@ -62,8 +62,10 @@ t = st.empty()
 for i in range(20):
     # animation_function(i)
     txt1 = str(i)
+    x=[i]
+    y=[i*i]
     t.write(txt1) 
-    time.sleep(1.5)
+    time.sleep(.5)
 st.header(txt1)
 
 st.write(txt1)  
