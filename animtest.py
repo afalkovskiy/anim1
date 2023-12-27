@@ -6,8 +6,8 @@ import time
 
 st.title("anim test 3")
 
-x = []
-y = []
+x = [3]
+y = [9]
 
 fig, ax = plt.subplots()
 
@@ -51,8 +51,8 @@ plt.grid(True)
 # x = np.array([5,7,8,7,2,17,2,9,4,11,12,9,6])
 # y = np.array([99,86,87,88,111,86,103,87,94,78,77,85,86])
 
-x = []
-y = []
+x = [3]
+y = [9]
 
 plt.scatter(x, y)
 
@@ -69,6 +69,7 @@ for i in range(20):
     y=[i*i]
     t.write(txt1) 
     time.sleep(.5)
+    plt.scatter(x, y)
 st.header(txt1)
 
 st.write(txt1)  
