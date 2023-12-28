@@ -88,7 +88,7 @@ st.header(txt1)
 
 
 st.write(txt1)  
-# st.pyplot(fig)
+st.pyplot(fig)
 
 
     
