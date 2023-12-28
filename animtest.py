@@ -23,7 +23,7 @@ ax.set_xlim([xmin, xmax])
 ax.set_ylim([ymin, ymax])
 
 
-ax.plot(x, y, linestyle='o')
+ax.plot(x, y, 'o', color='red')
 plt.xlabel("X (m)")
 plt.ylabel("Y (m)")
 plt.grid(True)
