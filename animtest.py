@@ -23,7 +23,7 @@ ax.set_xlim([xmin, xmax])
 ax.set_ylim([ymin, ymax])
 
 
-ax.plot(x, y, linestyle='dashed')
+ax.plot(x, y, linestyle='o')
 plt.xlabel("X (m)")
 plt.ylabel("Y (m)")
 plt.grid(True)
