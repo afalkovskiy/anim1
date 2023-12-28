@@ -6,8 +6,8 @@ import time
 
 st.title("anim test 4")
 
-x = [3]
-y = [9]
+x = [3, 4]
+y = [9, 16]
 
 fig, ax = plt.subplots()
 
@@ -16,17 +16,7 @@ ax.set_xlim(0, 100)
 ax.set_ylim(0, 12)
 
 # Since plotting a single graph
-line,  = ax.plot(0, 0)
-
-def init():  # give a clean slate to start
-    line.set_ydata([np.nan] * len(x))
-def animation_function(i):
-    x.append(i * 15)
-    y.append(i)
-
-    # line.set_xdata(x)
-    # line.set_ydata(y)
-    # return line,
+line,  = ax.plot(x, y)
 
 
 fig, ax = plt.subplots()
@@ -73,12 +63,12 @@ for i in range(20):
     line1.set_ydata(y)
  
     # drawing updated values
-    fig.canvas.draw()
+    st.pyplot(fig.canvas.draw())
  
     # This will run the GUI event
     # loop until all UI events
     # currently waiting have been processed
-    fig.canvas.flush_events()
+    st(fig.canvas.flush_events())
 
     
     time.sleep(.5)
