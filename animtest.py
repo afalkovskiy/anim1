@@ -4,7 +4,7 @@ from matplotlib.animation import FuncAnimation
 import numpy as np
 import time
 
-st.title("anim test 3")
+st.title("anim test 4")
 
 x = [3]
 y = [9]
@@ -56,7 +56,7 @@ y = [9]
 
 plt.scatter(x, y)
 
-# st.pyplot(fig)
+st.pyplot(fig)
 
 txt1 = ''
 st.write(txt1) 
@@ -72,7 +72,7 @@ for i in range(20):
     plt.scatter(x, y)
 st.header(txt1)
 
-st.pyplot(fig)
+# st.pyplot(fig)
 
 st.write(txt1)  
 # st.pyplot(fig)
