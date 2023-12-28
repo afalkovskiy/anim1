@@ -11,75 +11,20 @@ y = [9, 16]
 
 fig, ax = plt.subplots()
 
-# Setting limits for x and y axis
-ax.set_xlim(0, 100)
-ax.set_ylim(0, 12)
-
-# Since plotting a single graph
-line,  = ax.plot(x, y)
-
 
 fig, ax = plt.subplots()
-
 
 ax = plt.gca()
 xmin = 0.
 ymin = 0.
-xmax = 100.
+xmax = max(round(d/500.,0) * 500. + 500., round(h/500.,0) * 500. + 500.)
 ymax = xmax
 ax.set_xlim([xmin, xmax])
 ax.set_ylim([ymin, ymax])
 
+
+ax.plot(x, y, linestyle='dashed')
 plt.xlabel("X (m)")
 plt.ylabel("Y (m)")
 plt.grid(True)
-
-# x = np.array([5,7,8,7,2,17,2,9,4,11,12,9,6])
-# y = np.array([99,86,87,88,111,86,103,87,94,78,77,85,86])
-
-x = [3]
-y = [9]
-
-# plt.scatter(x, y)
-line1, = ax.plot(x, y) 
 st.pyplot(fig)
-
-# st.pyplot(fig)
-
-txt1 = ''
-st.write(txt1) 
-st.header(txt1)
-t = st.empty()
-for i in range(20):
-    # animation_function(i)
-    txt1 = str(i)
-    x=[i]
-    y=[i*i]
-    t.write(txt1) 
-
-
-    # updating data values
-    line1.set_xdata(x)
-    line1.set_ydata(y)
- 
-    # drawing updated values
-    st.pyplot(fig.canvas.draw())
- 
-    # This will run the GUI event
-    # loop until all UI events
-    # currently waiting have been processed
-    st(fig.canvas.flush_events())
-
-    
-    time.sleep(.5)
-    # plt.scatter(x, y)
-    # st.pyplot(fig)
-st.header(txt1)
-
-
-st.write(txt1)  
-st.pyplot(fig)
-
-
-    
-
