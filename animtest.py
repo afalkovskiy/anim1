@@ -56,7 +56,7 @@ y = [9]
 
 plt.scatter(x, y)
 
-st.pyplot(fig)
+# st.pyplot(fig)
 
 txt1 = ''
 st.write(txt1) 
@@ -70,6 +70,7 @@ for i in range(20):
     t.write(txt1) 
     time.sleep(.5)
     plt.scatter(x, y)
+    st.pyplot(fig)
 st.header(txt1)
 
 # st.pyplot(fig)
