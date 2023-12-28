@@ -28,13 +28,9 @@ def animation_function(i):
     # line.set_ydata(y)
     # return line,
 
-# animation = FuncAnimation(fig,
-#                           func = animation_function,
-#                           frames = np.arange(0, 10, 0.1),
-#                           interval = 10)
-# plt.show()
 
 fig, ax = plt.subplots()
+line1, = ax.plot(x, y) 
 
 ax = plt.gca()
 xmin = 0.
@@ -68,12 +64,27 @@ for i in range(20):
     x=[i]
     y=[i*i]
     t.write(txt1) 
+
+
+    # updating data values
+    line1.set_xdata(x)
+    line1.set_ydata(y)
+ 
+    # drawing updated values
+    fig.canvas.draw()
+ 
+    # This will run the GUI event
+    # loop until all UI events
+    # currently waiting have been processed
+    fig.canvas.flush_events()
+
+    
     time.sleep(.5)
-    plt.scatter(x, y)
-    st.pyplot(fig)
+    # plt.scatter(x, y)
+    # st.pyplot(fig)
 st.header(txt1)
 
-# st.pyplot(fig)
+st.pyplot(fig)
 
 st.write(txt1)  
 # st.pyplot(fig)
