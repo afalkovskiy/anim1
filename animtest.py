@@ -30,7 +30,7 @@ def animation_function(i):
 
 
 fig, ax = plt.subplots()
-line1, = ax.plot(x, y) 
+
 
 ax = plt.gca()
 xmin = 0.
@@ -50,7 +50,9 @@ plt.grid(True)
 x = [3]
 y = [9]
 
-plt.scatter(x, y)
+# plt.scatter(x, y)
+line1, = ax.plot(x, y) 
+st.pyplot(fig)
 
 # st.pyplot(fig)
 
@@ -84,7 +86,6 @@ for i in range(20):
     # st.pyplot(fig)
 st.header(txt1)
 
-st.pyplot(fig)
 
 st.write(txt1)  
 # st.pyplot(fig)
