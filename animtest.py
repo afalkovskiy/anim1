@@ -32,7 +32,6 @@ for i in range(1, 10):
   x = [i, i + 1]
   y = [i**2, (i + 1)**2]
   time.sleep(0.5)
-  
-st.pyplot(fig)
+  st.pyplot(fig)
 
 
