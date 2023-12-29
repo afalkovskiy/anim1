@@ -31,12 +31,13 @@ plt.grid(True)
 for i in range(1, 10):
   x = [i, i + 1]
   y = [i**2, (i + 1)**2]
-  plot1.set_xdata(x)
-  plot1.set_ydata(y)
-  st.pyplot(fig.canvas.draw())
+  # plot1.set_xdata(x)
+  # plot1.set_ydata(y)
+  # st.pyplot(fig.canvas.draw())
   st.pyplot(fig.canvas.flush_events())
+  ax.plot(x, y, 'o', color='red')
   time.sleep(2.5)
-  # ax.plot(x, y, 'o', color='red')
+  ax.plot(x, y, 'o', color='red')
 
 st.pyplot(fig)
 
