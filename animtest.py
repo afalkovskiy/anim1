@@ -34,7 +34,7 @@ for i in range(1, 10):
   plot1.set_xdata(x)
   plot1.set_ydata(y)
   
-  time.sleep(0.5)
+  time.sleep(2.5)
   # ax.plot(x, y, 'o', color='red')
 
 st.pyplot(fig)
