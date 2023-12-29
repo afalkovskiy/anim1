@@ -33,8 +33,8 @@ for i in range(1, 10):
   y = [i**2, (i + 1)**2]
   plot1.set_xdata(x)
   plot1.set_ydata(y)
-  fig.canvas.draw()
-  fig.canvas.flush_events()
+  st.pyplot(fig.canvas.draw())
+  st.pyplot(fig.canvas.flush_events())
   time.sleep(2.5)
   # ax.plot(x, y, 'o', color='red')
 
