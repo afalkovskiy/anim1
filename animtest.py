@@ -23,7 +23,7 @@ ax.set_xlim([xmin, xmax])
 ax.set_ylim([ymin, ymax])
 
 
-ax.plot(x, y, 'o', color='red')
+plot1, = ax.plot(x, y, 'o', color='red')
 plt.xlabel("X (m)")
 plt.ylabel("Y (m)")
 plt.grid(True)
@@ -31,8 +31,11 @@ plt.grid(True)
 for i in range(1, 10):
   x = [i, i + 1]
   y = [i**2, (i + 1)**2]
+  plot1.set_xdata(x)
+  plot1.set_ydata(y)
+  
   time.sleep(0.5)
-  ax.plot(x, y, 'o', color='red')
+  # ax.plot(x, y, 'o', color='red')
 
 st.pyplot(fig)
 
