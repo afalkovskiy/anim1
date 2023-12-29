@@ -1,45 +1,64 @@
+# import streamlit as st
+# from matplotlib import pyplot as plt
+# from matplotlib.animation import FuncAnimation
+# import numpy as np
+# import time
+
+# st.title("anim test 4")
+
+# x = [3, 4]
+# y = [9, 16]
+
+# fig, ax = plt.subplots()
+
+
+# fig, ax = plt.subplots()
+
+# ax = plt.gca()
+# xmin = 0.
+# ymin = 0.
+# xmax = 100.
+# ymax = xmax
+# ax.set_xlim([xmin, xmax])
+# ax.set_ylim([ymin, ymax])
+
+
+# plot1, = ax.plot(x, y, 'o', color='red')
+# plt.xlabel("X (m)")
+# plt.ylabel("Y (m)")
+# plt.grid(True)
+
+# st.pyplot(fig)
+
+# for i in range(1, 10):
+#   x = [i, i + 1]
+#   y = [i**2, (i + 1)**2]
+#   # plot1.set_xdata(x)
+#   # plot1.set_ydata(y)
+#   # st.pyplot(fig.canvas.draw())
+#   # st.pyplot(fig.canvas.flush_events())
+#   # ax.plot(x, y, 'o', color='red')
+#   time.sleep(2.5)
+#   ax.plot(x, y, 'o', color='red')
+
 import streamlit as st
-from matplotlib import pyplot as plt
-from matplotlib.animation import FuncAnimation
-import numpy as np
 import time
+import numpy as np
 
-st.title("anim test 4")
+progress_bar = st.sidebar.progress(0)
+status_text = st.sidebar.empty()
 
-x = [3, 4]
-y = [9, 16]
+chart = st.line_chart(np.zeros(shape=(1,1)))
+x = np.arange(0, 100*np.pi, 0.1)
 
-fig, ax = plt.subplots()
+for i in range(1, 101):
+    y = np.sin(x[i])
+    status_text.text("%i%% Complete" % i)
+    chart.add_rows([y])
+    progress_bar.progress(i)
+    time.sleep(0.05)
 
-
-fig, ax = plt.subplots()
-
-ax = plt.gca()
-xmin = 0.
-ymin = 0.
-xmax = 100.
-ymax = xmax
-ax.set_xlim([xmin, xmax])
-ax.set_ylim([ymin, ymax])
-
-
-plot1, = ax.plot(x, y, 'o', color='red')
-plt.xlabel("X (m)")
-plt.ylabel("Y (m)")
-plt.grid(True)
-
-st.pyplot(fig)
-
-for i in range(1, 10):
-  x = [i, i + 1]
-  y = [i**2, (i + 1)**2]
-  # plot1.set_xdata(x)
-  # plot1.set_ydata(y)
-  # st.pyplot(fig.canvas.draw())
-  # st.pyplot(fig.canvas.flush_events())
-  # ax.plot(x, y, 'o', color='red')
-  time.sleep(2.5)
-  ax.plot(x, y, 'o', color='red')
+progress_bar.empty()
 
 
 
