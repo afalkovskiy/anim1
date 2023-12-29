@@ -33,6 +33,7 @@ for i in range(1, 10):
   y = [i**2, (i + 1)**2]
   time.sleep(0.5)
   ax.plot(x, y, 'o', color='red')
-  st.pyplot(fig)
+
+st.pyplot(fig)
 
 
