@@ -89,7 +89,3 @@ st.header('test Projectile Motion \n AF, Dec 2023'
 #     time.sleep(0.05)
 
 # progress_bar.empty()
-
-
-
-
