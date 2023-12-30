@@ -36,7 +36,9 @@ with col2:
     alpha_rad = pi * alpha / 180.
 
 chart = st.line_chart(np.zeros(shape=(1,1)))
-x = np.arange(0, 100*np.pi, 0.1)
+# x = np.arange(0, 100*np.pi, 0.1)
+
+x, y, t2, d, h = projectile(v, alpha_rad)
 
 for i in range(1, 101):
     y = np.sin(x[i])
