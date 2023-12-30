@@ -78,17 +78,17 @@ st.header('test Projectile Motion \n AF, Dec 2023'
 #     alpha = st.slider('Inclination to the horizontal (deg)', value=30., min_value=0., max_value=90.)
 #     alpha_rad = pi * alpha / 180.
 
-chart = st.line_chart(np.zeros(shape=(1,1)))
-x = np.arange(0, 100*np.pi, 0.1)
+# chart = st.line_chart(np.zeros(shape=(1,1)))
+# x = np.arange(0, 100*np.pi, 0.1)
 
-for i in range(1, 101):
-    y = np.sin(x[i])
-    status_text.text("%i%% Complete" % i)
-    chart.add_rows([y])
-    progress_bar.progress(i)
-    time.sleep(0.05)
+# for i in range(1, 101):
+#     y = np.sin(x[i])
+#     status_text.text("%i%% Complete" % i)
+#     chart.add_rows([y])
+#     progress_bar.progress(i)
+#     time.sleep(0.05)
 
-progress_bar.empty()
+# progress_bar.empty()
 
 
 
