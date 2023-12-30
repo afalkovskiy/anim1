@@ -25,7 +25,7 @@ import math
 # progress_bar = st.sidebar.progress(0)
 # status_text = st.sidebar.empty()
 
-st.header('test Projectile Motion \n AF, Dec 2023'
+st.header('test Projectile Motion \n AF, Dec 2023')
 
 # col1, col2 = st.columns(2)
 # with col1:
