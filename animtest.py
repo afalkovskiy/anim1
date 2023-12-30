@@ -42,9 +42,10 @@ chart = st.line_chart(np.zeros(shape=(1,1)))
 x, y, t2, d, h = projectile(v, alpha_rad)
 
 for i in range(1, 101):
-    y = np.sin(x[i])
+    # y = np.sin(x[i])
+    y1 = y[i]
     status_text.text("%i%% Complete" % i)
-    chart.add_rows([y])
+    chart.add_rows([y1])
     progress_bar.progress(i)
     time.sleep(0.05)
 
